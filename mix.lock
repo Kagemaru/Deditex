@@ -1,0 +1,9 @@
+%{
+  "benchfella": {:hex, :benchfella, "0.3.5", "b2122c234117b3f91ed7b43b6e915e19e1ab216971154acd0a80ce0e9b8c05f5", [:mix], [], "hexpm"},
+  "bunt": {:hex, :bunt, "0.2.0", "951c6e801e8b1d2cbe58ebbd3e616a869061ddadcc4863d0a2182541acae9a38", [:mix], [], "hexpm"},
+  "credo": {:hex, :credo, "0.9.0", "5d1b494e4f2dc672b8318e027bd833dda69be71eaac6eedd994678be74ef7cb4", [:mix], [{:bunt, "~> 0.2.0", [hex: :bunt, repo: "hexpm", optional: false]}, {:poison, ">= 0.0.0", [hex: :poison, repo: "hexpm", optional: false]}], "hexpm"},
+  "dialyxir": {:hex, :dialyxir, "0.5.1", "b331b091720fd93e878137add264bac4f644e1ddae07a70bf7062c7862c4b952", [:mix], [], "hexpm"},
+  "hexfmt": {:git, "https://github.com/miwee/hexfmt.git", "516ef1800f18f4ff803c8567e4434bedb789eedb", []},
+  "poison": {:hex, :poison, "3.1.0", "d9eb636610e096f86f25d9a46f35a9facac35609a7591b3be3326e99a0484665", [:mix], [], "hexpm"},
+  "stubr": {:hex, :stubr, "1.5.1", "6c710a66089c0b0393d29050b4294b46541baaae3ea7f8ff16925f13323e061e", [:mix], [], "hexpm"},
+}
