@@ -1,5 +1,6 @@
 %{
   "benchfella": {:hex, :benchfella, "0.3.5", "b2122c234117b3f91ed7b43b6e915e19e1ab216971154acd0a80ce0e9b8c05f5", [:mix], [], "hexpm"},
+  "bitmap": {:hex, :bitmap, "1.0.1", "37d913e4f36e65ffffc3e38ee2bd2e8d768aedec6973de4bdce5c3456ef8a86e", [:mix], [], "hexpm"},
   "bunt": {:hex, :bunt, "0.2.0", "951c6e801e8b1d2cbe58ebbd3e616a869061ddadcc4863d0a2182541acae9a38", [:mix], [], "hexpm"},
   "credo": {:hex, :credo, "0.9.0", "5d1b494e4f2dc672b8318e027bd833dda69be71eaac6eedd994678be74ef7cb4", [:mix], [{:bunt, "~> 0.2.0", [hex: :bunt, repo: "hexpm", optional: false]}, {:poison, ">= 0.0.0", [hex: :poison, repo: "hexpm", optional: false]}], "hexpm"},
   "dialyxir": {:hex, :dialyxir, "0.5.1", "b331b091720fd93e878137add264bac4f644e1ddae07a70bf7062c7862c4b952", [:mix], [], "hexpm"},
