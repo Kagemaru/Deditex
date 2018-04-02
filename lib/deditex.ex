@@ -46,7 +46,7 @@ defmodule Deditex do
   @spec read_from_state(pid(), any()) :: any()
   def read_from_state(pid, key), do: GenServer.call(pid, {:read_from_state, key})
 
-  @spec add_to_state(pid(), any(), any()) :: :ok
+  @spec add_to_state(pid(), any(), any()) :: none()
   def add_to_state(pid, key, value), do: GenServer.cast(pid, {:add_to_state, key, value})
   # End of Client API
 
@@ -81,6 +81,6 @@ defmodule Deditex do
   @spec handle_call({:read_from_state, any()}, any(), map()) :: {:reply, any(), map()}
   def handle_call({:read_from_state, key}, _from, state), do: {:reply, state[key], state}
 
-  @spec handle_cast({:add, any(), any()}, map()) :: {:noreply, map()}
-  def handle_cast({:add, key, value}, state), do: {:noreply, Map.put(state, key, value)}
+  @spec handle_cast({:add_to_state, any(), any()}, map()) :: {:noreply, map()}
+  def handle_cast({:add_to_state, key, value}, state), do: {:noreply, Map.put(state, key, value)}
 end
