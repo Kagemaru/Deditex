@@ -45,8 +45,8 @@ defmodule Deditex.MixProject do
   defp package do
     [
       name: "deditex",
-      licenses: "GNU General Public License v3.0",
-      maintainers: "Thomas Burkhalter",
+      licenses: ["GNU General Public License v3.0"],
+      maintainers: ["Thomas Burkhalter"],
       links: %{"GitHub" => "https://github.com/Kagemaru/deditex"},
       source_url: "https://github.com/Kagemaru/deditex"
     ]
