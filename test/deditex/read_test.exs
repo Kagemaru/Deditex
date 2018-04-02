@@ -15,6 +15,6 @@ defmodule DeditexReadTest do
     value = :rand.uniform(0x100) - 1
     {:ok, d} = Deditex.start_link(config[:ip], config[:port])
     :ok = Deditex.write(d, "B", 0x00, value)
-    assert value = Deditex.read(d, "B", 0x00)
+    assert _value = Deditex.read(d, "B", 0x00)
   end
 end
