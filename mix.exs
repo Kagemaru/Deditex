@@ -4,6 +4,8 @@ defmodule Deditex.MixProject do
   def project do
     [
       app: :deditex,
+      description: "Handles connections to the Deditec RO-ETH Modules.",
+      package: package(),
       version: "0.1.0",
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
@@ -37,6 +39,14 @@ defmodule Deditex.MixProject do
       {:excoveralls, "~> 0.8", only: :test}
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
+    ]
+  end
+
+  defp package do
+    [
+      name: "deditex",
+      licenses: "GNU General Public License v3.0",
+      maintainers: "Thomas Burkhalter"
     ]
   end
 end
