@@ -20,14 +20,8 @@ defmodule Deditex.FakeTCP do
     if byte_size(package) == 10 do
       read_from_state(socket, package)
     else
-      # write_to_state(socket, 1, 11, "B", <<10, 10>>)
       write_to_state(socket, package)
     end
-
-    # case package do
-    #
-    # 	_ -> :error
-    # end
   end
 
   def recv(socket, _length), do: {:ok, Agent.get(socket, &Map.get(&1, :recv))}
@@ -49,7 +43,7 @@ defmodule Deditex.FakeTCP do
   end
 
   def write_to_state(_socket, package) do
-    <<Address.send_header(), job::8, _length::16, 0x57::8, width::8, address::16, data::binary>> =
+    <<Address.send_header(), job::8, _length::16, 0x57::8, _width::8, address::16, data::binary>> =
       package
 
     Agent.update(__MODULE__, &Map.put(&1, address, data))
