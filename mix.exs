@@ -30,7 +30,6 @@ defmodule Deditex.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:hexfmt, github: "miwee/hexfmt"},
       {:credo, "~> 0.9.0", only: [:dev, :test]},
       {:dialyxir, "~> 0.5.1", only: [:dev], runtime: false},
       {:benchfella, "~> 0.3.5", only: [:dev, :test]},
@@ -46,7 +45,8 @@ defmodule Deditex.MixProject do
     [
       name: "deditex",
       licenses: "GNU General Public License v3.0",
-      maintainers: "Thomas Burkhalter"
+      maintainers: "Thomas Burkhalter",
+      source_url: "https://github.com/Kagemaru/deditex"
     ]
   end
 end
