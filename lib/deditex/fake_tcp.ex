@@ -48,11 +48,10 @@ defmodule Deditex.FakeTCP do
     :ok
   end
 
-  def write_to_state(socket, package) do
+  def write_to_state(_socket, package) do
     <<Address.send_header(), job::8, _length::16, 0x57::8, width::8, address::16, data::binary>> =
       package
 
-    data_width = Helper.translate_width(<<width>>)
     Agent.update(__MODULE__, &Map.put(&1, address, data))
 
     Agent.update(
